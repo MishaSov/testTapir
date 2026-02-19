@@ -1,0 +1,27 @@
+@use './variables' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-md;
+  color: $color-text;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  &__main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
